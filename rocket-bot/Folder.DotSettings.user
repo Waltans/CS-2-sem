@@ -1,4 +1,9 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/CodeInspection/Roslyn/RoslynEnabled/@EntryValue">False</s:Boolean>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6c98dfd3_002D5db9_002D4f98_002D87be_002D3f775017df86/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from ChannelTests.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;ProjectFile&gt;40D76C18-9109-F41B-3377-8C1FAFFF6CE9/f:ChannelTests.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;40D76C18-9109-F41B-3377-8C1FAFFF6CE9/f:ChannelTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;40D76C18-9109-F41B-3377-8C1FAFFF6CE9/f:BotTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;40D76C18-9109-F41B-3377-8C1FAFFF6CE9/f:BotTests.Multithread.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

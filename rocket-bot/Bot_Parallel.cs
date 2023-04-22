@@ -7,19 +7,19 @@ namespace rocket_bot;
 
 public partial class Bot
 {
-	public Rocket? GetNextMove(Rocket? rocket)
-	{
-		// TODO: распараллелить запуск SearchBestMove
-		var (turn, score) = CreateTasks(rocket)
-			.First()
-			.GetAwaiter()
-			.GetResult();
-		
-		return rocket.Move(turn, level);
-	}
-	
-	public List<Task<(Turn Turn, double Score)>> CreateTasks(Rocket? rocket)
-	{
-		return new() { Task.Run(() => SearchBestMove(rocket, new Random(random.Next()), iterationsCount)) };
-	}
+    public Rocket GetNextMove(Rocket rocket)
+    {
+        var tasks = CreateTasks(rocket);
+        var results = Task.WhenAll(tasks).GetAwaiter().GetResult();
+        var (turn, _) = results.MaxBy(t => t.Score);
+        return rocket.Move(turn, level);
+    }
+
+    public List<Task<(Turn Turn, double Score)>> CreateTasks(Rocket rocket)
+    {
+        return Enumerable.Range(0, threadsCount)
+            .Select(_ =>
+                Task.Run(() => SearchBestMove(rocket, new Random(random.Next()), iterationsCount / threadsCount)))
+            .ToList();
+    }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace rocket_bot;
 
@@ -45,7 +46,7 @@ public partial class Bot
 		// ReSharper disable once FunctionNeverReturns
 	}
 
-	public (Turn Turn, double Score) SearchBestMove(Rocket? rocket, Random searchRandom, int searchIterationsCount)
+	public (Turn, double) SearchBestMove(Rocket? rocket, Random searchRandom, int searchIterationsCount)
 	{
 		var initialRocketTime = rocket.Time;
 		List<Turn> bestStrategy = null;

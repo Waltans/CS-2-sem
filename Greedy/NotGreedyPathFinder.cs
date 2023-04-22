@@ -1,11 +1,15 @@
 ﻿using System.Collections.Generic;
+<<<<<<< HEAD
 using System.Linq;
+=======
+>>>>>>> 3e3b700 (Commit)
 using Greedy.Architecture;
 
 namespace Greedy;
 
 public class NotGreedyPathFinder : IPathFinder
 {
+<<<<<<< HEAD
     public List<Point> FindPathToCompleteGoal(State state)
     {
         var dijkstraPathFinder = new DijkstraPathFinder();
@@ -50,3 +54,10 @@ public class NotGreedyPathFinder : IPathFinder
         return result;
     }
 }
+=======
+	public List<Point> FindPathToCompleteGoal(State state)
+	{
+		return new List<Point>();
+	}
+}
+>>>>>>> 3e3b700 (Commit)
