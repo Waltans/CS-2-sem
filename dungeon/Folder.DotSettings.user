@@ -1,0 +1,16 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=050dc675_002Dd9bc_002D40da_002Dbbf0_002Dc767ad60cfd4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Dungeon_Should.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;3A7E94EF-31EF-E270-6167-C58D17A81ACC/f:Dungeon_Should.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1222deae_002D2599_002D4bd8_002Dbdb4_002D4fe5a90c4413/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Dungeon_Should.cs #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;3A7E94EF-31EF-E270-6167-C58D17A81ACC/f:Dungeon_Should.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;3A7E94EF-31EF-E270-6167-C58D17A81ACC/f:Bfs_Should.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7dd89de2_002D44fe_002D4747_002Da66a_002Df6320cc0b38a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Dungeon_Should.cs #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;3A7E94EF-31EF-E270-6167-C58D17A81ACC/f:Dungeon_Should.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;3A7E94EF-31EF-E270-6167-C58D17A81ACC/f:Bfs_Should.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

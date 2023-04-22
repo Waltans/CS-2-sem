@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" name="GaussAlgorithm.dll" fullname="C:/Users/Владислав/Desktop/C# 2 sem/gauss/bin/Debug/net6.0/GaussAlgorithm.dll" testcasecount="37" result="Failed" start-time="2023-03-30T14:23:38.5559059Z" end-time="2023-03-30T14:23:38.8938138Z" duration="0.337890" total="37" passed="17" failed="20" inconclusive="0" skipped="0" warnings="0" asserts="12015" random-seed="547834049">
+  <command-line><![CDATA["C:\Users\Владислав\Desktop\C# 2 sem\gauss\bin\Debug\net6.0\GaussAlgorithm.dll"]]></command-line>
+  <filter />
+  <test-suite type="Assembly" id="1045" name="GaussAlgorithm.dll" fullname="C:/Users/Владислав/Desktop/C# 2 sem/gauss/bin/Debug/net6.0/GaussAlgorithm.dll" runstate="Runnable" testcasecount="37" result="Failed" site="Child" start-time="2023-03-30T14:23:38.5559059Z" end-time="2023-03-30T14:23:38.8938138Z" duration="0.337890" total="37" passed="17" failed="20" warnings="0" inconclusive="0" skipped="0" asserts="12015">
+    <environment framework-version="3.13.3.0" clr-version="6.0.8" os-version="Microsoft Windows 10.0.22000" platform="Win32NT" cwd="C:\Users\Владислав\Desktop\C# 2 sem\gauss\bin\Debug\net6.0" machine-name="WALTANS" user="Владислав" user-domain="WALTANS" culture="ru-RU" uiculture="ru-RU" os-architecture="x64" />
+    <settings>
+      <setting name="WorkDirectory" value="C:\Users\Владислав\Desktop\C# 2 sem\gauss\bin\Debug\net6.0" />
+      <setting name="NumberOfTestWorkers" value="16" />
+    </settings>
+    <properties>
+      <property name="_PID" value="804" />
+      <property name="_APPDOMAIN" value="GaussAlgorithm" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1046" name="GaussAlgorithm" fullname="GaussAlgorithm" runstate="Runnable" testcasecount="37" result="Failed" site="Child" start-time="2023-03-30T14:23:38.5597509Z" end-time="2023-03-30T14:23:38.8938116Z" duration="0.334059" total="37" passed="17" failed="20" warnings="0" inconclusive="0" skipped="0" asserts="12015">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1000" name="Solver_Should" fullname="GaussAlgorithm.Solver_Should" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" testcasecount="37" result="Failed" site="Child" start-time="2023-03-30T14:23:38.5607610Z" end-time="2023-03-30T14:23:38.8938077Z" duration="0.333047" total="37" passed="17" failed="20" warnings="0" inconclusive="0" skipped="0" asserts="12015">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="ParameterizedMethod" id="1044" name="Solve_WhenHasLinearlyDependentRows" fullname="GaussAlgorithm.Solver_Should.Solve_WhenHasLinearlyDependentRows" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2023-03-30T14:23:38.5621882Z" end-time="2023-03-30T14:23:38.7093331Z" duration="0.147145" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1039" name="Solve_WhenHasLinearlyDependentRows(10)" fullname="GaussAlgorithm.Solver_Should.Solve_WhenHasLinearlyDependentRows(10)" methodname="Solve_WhenHasLinearlyDependentRows" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="76997352" result="Failed" label="Error" start-time="2023-03-30T14:23:38.5623265Z" end-time="2023-03-30T14:23:38.7066319Z" duration="0.144364" asserts="0">
+            <failure>
+              <message><![CDATA[GaussAlgorithm.NoSolutionException : null matrix]]></message>
+              <stack-trace><![CDATA[   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 27
+   at GaussAlgorithm.Solver_Should.Solve_WhenHasLinearlyDependentRows(Int32 matrixSize) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 123]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1040" name="Solve_WhenHasLinearlyDependentRows(5)" fullname="GaussAlgorithm.Solver_Should.Solve_WhenHasLinearlyDependentRows(5)" methodname="Solve_WhenHasLinearlyDependentRows" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="1519600239" result="Failed" label="Error" start-time="2023-03-30T14:23:38.7077069Z" end-time="2023-03-30T14:23:38.7081377Z" duration="0.000431" asserts="0">
+            <failure>
+              <message><![CDATA[GaussAlgorithm.NoSolutionException : null matrix]]></message>
+              <stack-trace><![CDATA[   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 27
+   at GaussAlgorithm.Solver_Should.Solve_WhenHasLinearlyDependentRows(Int32 matrixSize) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 123]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1041" name="Solve_WhenHasLinearlyDependentRows(4)" fullname="GaussAlgorithm.Solver_Should.Solve_WhenHasLinearlyDependentRows(4)" methodname="Solve_WhenHasLinearlyDependentRows" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="156077646" result="Failed" label="Error" start-time="2023-03-30T14:23:38.7081536Z" end-time="2023-03-30T14:23:38.7083672Z" duration="0.000214" asserts="0">
+            <failure>
+              <message><![CDATA[GaussAlgorithm.NoSolutionException : null matrix]]></message>
+              <stack-trace><![CDATA[   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 27
+   at GaussAlgorithm.Solver_Should.Solve_WhenHasLinearlyDependentRows(Int32 matrixSize) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 123]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1042" name="Solve_WhenHasLinearlyDependentRows(3)" fullname="GaussAlgorithm.Solver_Should.Solve_WhenHasLinearlyDependentRows(3)" methodname="Solve_WhenHasLinearlyDependentRows" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="2032972031" result="Failed" label="Error" start-time="2023-03-30T14:23:38.7083756Z" end-time="2023-03-30T14:23:38.7085390Z" duration="0.000164" asserts="0">
+            <failure>
+              <message><![CDATA[GaussAlgorithm.NoSolutionException : null matrix]]></message>
+              <stack-trace><![CDATA[   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 27
+   at GaussAlgorithm.Solver_Should.Solve_WhenHasLinearlyDependentRows(Int32 matrixSize) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 123]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1043" name="Solve_WhenHasLinearlyDependentRows(2)" fullname="GaussAlgorithm.Solver_Should.Solve_WhenHasLinearlyDependentRows(2)" methodname="Solve_WhenHasLinearlyDependentRows" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="2141704320" result="Failed" label="Error" start-time="2023-03-30T14:23:38.7085454Z" end-time="2023-03-30T14:23:38.7087001Z" duration="0.000155" asserts="0">
+            <failure>
+              <message><![CDATA[GaussAlgorithm.NoSolutionException : null matrix]]></message>
+              <stack-trace><![CDATA[   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 27
+   at GaussAlgorithm.Solver_Should.Solve_WhenHasLinearlyDependentRows(Int32 matrixSize) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 123]]></stack-trace>
+            </failure>
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1008" name="SolveCommonCases_1x1" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_1x1" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2023-03-30T14:23:38.7095979Z" end-time="2023-03-30T14:23:38.7238928Z" duration="0.014295" total="7" passed="3" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="3">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1001" name="SolveCommonCases_1x1(1,1,42)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_1x1(1,1,42)" methodname="SolveCommonCases_1x1" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="450808077" result="Passed" start-time="2023-03-30T14:23:38.7096116Z" end-time="2023-03-30T14:23:38.7188289Z" duration="0.009218" asserts="1" />
+          <test-case id="1002" name="SolveCommonCases_1x1(1,2,-42)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_1x1(1,2,-42)" methodname="SolveCommonCases_1x1" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="1954747473" result="Passed" start-time="2023-03-30T14:23:38.7188461Z" end-time="2023-03-30T14:23:38.7189337Z" duration="0.000088" asserts="1" />
+          <test-case id="1003" name="SolveCommonCases_1x1(1,-100,0)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_1x1(1,-100,0)" methodname="SolveCommonCases_1x1" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="1129408771" result="Passed" start-time="2023-03-30T14:23:38.7189470Z" end-time="2023-03-30T14:23:38.7189680Z" duration="0.000021" asserts="1" />
+          <test-case id="1004" name="SolveCommonCases_1x1(1,0,0)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_1x1(1,0,0)" methodname="SolveCommonCases_1x1" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="1397668142" result="Failed" label="Error" start-time="2023-03-30T14:23:38.7189722Z" end-time="2023-03-30T14:23:38.7193300Z" duration="0.000358" asserts="0">
+            <failure>
+              <message><![CDATA[GaussAlgorithm.NoSolutionException : null matrix]]></message>
+              <stack-trace><![CDATA[   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 27
+   at GaussAlgorithm.Solver_Should.AssertIsSolvable(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 130
+   at GaussAlgorithm.Solver_Should.SolveCommonCases_1x1(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 35]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1005" name="SolveCommonCases_1x1(1,1,21,2,42)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_1x1(1,1,21,2,42)" methodname="SolveCommonCases_1x1" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="366907967" result="Failed" label="Error" start-time="2023-03-30T14:23:38.7193393Z" end-time="2023-03-30T14:23:38.7234285Z" duration="0.004089" asserts="0">
+            <failure>
+              <message><![CDATA[System.ArgumentOutOfRangeException : Specified argument was out of the range of valid values. (Parameter 'column')]]></message>
+              <stack-trace><![CDATA[   at MathNet.Numerics.LinearAlgebra.Storage.MatrixStorage`1.ValidateRange(Int32 row, Int32 column)
+   at MathNet.Numerics.LinearAlgebra.Storage.MatrixStorage`1.get_Item(Int32 row, Int32 column)
+   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 16
+   at GaussAlgorithm.Solver_Should.AssertIsSolvable(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 130
+   at GaussAlgorithm.Solver_Should.SolveCommonCases_1x1(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 35]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1006" name="SolveCommonCases_1x1(1,2,42,1,21)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_1x1(1,2,42,1,21)" methodname="SolveCommonCases_1x1" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="2111791145" result="Failed" label="Error" start-time="2023-03-30T14:23:38.7234404Z" end-time="2023-03-30T14:23:38.7236920Z" duration="0.000252" asserts="0">
+            <failure>
+              <message><![CDATA[System.ArgumentOutOfRangeException : Specified argument was out of the range of valid values. (Parameter 'column')]]></message>
+              <stack-trace><![CDATA[   at MathNet.Numerics.LinearAlgebra.Storage.MatrixStorage`1.ValidateRange(Int32 row, Int32 column)
+   at MathNet.Numerics.LinearAlgebra.Storage.MatrixStorage`1.get_Item(Int32 row, Int32 column)
+   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 16
+   at GaussAlgorithm.Solver_Should.AssertIsSolvable(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 130
+   at GaussAlgorithm.Solver_Should.SolveCommonCases_1x1(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 35]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1007" name="SolveCommonCases_1x1(1,0,0,0,0)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_1x1(1,0,0,0,0)" methodname="SolveCommonCases_1x1" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="741820299" result="Failed" label="Error" start-time="2023-03-30T14:23:38.7237014Z" end-time="2023-03-30T14:23:38.7238691Z" duration="0.000168" asserts="0">
+            <failure>
+              <message><![CDATA[GaussAlgorithm.NoSolutionException : null matrix]]></message>
+              <stack-trace><![CDATA[   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 27
+   at GaussAlgorithm.Solver_Should.AssertIsSolvable(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 130
+   at GaussAlgorithm.Solver_Should.SolveCommonCases_1x1(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 35]]></stack-trace>
+            </failure>
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1017" name="SolveCommonCases_2x2" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_2x2" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2023-03-30T14:23:38.7239019Z" end-time="2023-03-30T14:23:38.7250835Z" duration="0.001182" total="8" passed="2" failed="6" warnings="0" inconclusive="0" skipped="0" asserts="4">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1009" name="SolveCommonCases_2x2(2,1,2,42)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_2x2(2,1,2,42)" methodname="SolveCommonCases_2x2" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="678620994" result="Failed" label="Error" start-time="2023-03-30T14:23:38.7239101Z" end-time="2023-03-30T14:23:38.7242180Z" duration="0.000308" asserts="0">
+            <failure>
+              <message><![CDATA[System.ArgumentOutOfRangeException : Specified argument was out of the range of valid values. (Parameter 'index')]]></message>
+              <stack-trace><![CDATA[   at MathNet.Numerics.LinearAlgebra.Storage.VectorStorage`1.ValidateRange(Int32 index)
+   at MathNet.Numerics.LinearAlgebra.Storage.VectorStorage`1.get_Item(Int32 index)
+   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 58
+   at GaussAlgorithm.Solver_Should.AssertIsSolvable(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 130
+   at GaussAlgorithm.Solver_Should.SolveCommonCases_2x2(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 54]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1010" name="SolveCommonCases_2x2(2,0,-2,42)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_2x2(2,0,-2,42)" methodname="SolveCommonCases_2x2" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="1477910942" result="Failed" label="Error" start-time="2023-03-30T14:23:38.7242274Z" end-time="2023-03-30T14:23:38.7243891Z" duration="0.000162" asserts="0">
+            <failure>
+              <message><![CDATA[GaussAlgorithm.NoSolutionException : null matrix]]></message>
+              <stack-trace><![CDATA[   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 27
+   at GaussAlgorithm.Solver_Should.AssertIsSolvable(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 130
+   at GaussAlgorithm.Solver_Should.SolveCommonCases_2x2(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 54]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1011" name="SolveCommonCases_2x2(2,-1,0,42)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_2x2(2,-1,0,42)" methodname="SolveCommonCases_2x2" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="1726700596" result="Failed" label="Error" start-time="2023-03-30T14:23:38.7243960Z" end-time="2023-03-30T14:23:38.7245539Z" duration="0.000158" asserts="0">
+            <failure>
+              <message><![CDATA[System.ArgumentOutOfRangeException : Specified argument was out of the range of valid values. (Parameter 'index')]]></message>
+              <stack-trace><![CDATA[   at MathNet.Numerics.LinearAlgebra.Storage.VectorStorage`1.ValidateRange(Int32 index)
+   at MathNet.Numerics.LinearAlgebra.Storage.VectorStorage`1.get_Item(Int32 index)
+   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 58
+   at GaussAlgorithm.Solver_Should.AssertIsSolvable(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 130
+   at GaussAlgorithm.Solver_Should.SolveCommonCases_2x2(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 54]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1012" name="SolveCommonCases_2x2(2,0,0,0)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_2x2(2,0,0,0)" methodname="SolveCommonCases_2x2" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="994935129" result="Failed" label="Error" start-time="2023-03-30T14:23:38.7245599Z" end-time="2023-03-30T14:23:38.7247003Z" duration="0.000141" asserts="0">
+            <failure>
+              <message><![CDATA[GaussAlgorithm.NoSolutionException : null matrix]]></message>
+              <stack-trace><![CDATA[   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 27
+   at GaussAlgorithm.Solver_Should.AssertIsSolvable(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 130
+   at GaussAlgorithm.Solver_Should.SolveCommonCases_2x2(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 54]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1013" name="SolveCommonCases_2x2(2,1,2,1,3,-1,2)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_2x2(2,1,2,1,3,-1,2)" methodname="SolveCommonCases_2x2" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="376175955" result="Passed" start-time="2023-03-30T14:23:38.7247059Z" end-time="2023-03-30T14:23:38.7247399Z" duration="0.000034" asserts="2" />
+          <test-case id="1014" name="SolveCommonCases_2x2(2,1,-2,42,2,1,-31)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_2x2(2,1,-2,42,2,1,-31)" methodname="SolveCommonCases_2x2" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="533591069" result="Passed" start-time="2023-03-30T14:23:38.7247431Z" end-time="2023-03-30T14:23:38.7247589Z" duration="0.000016" asserts="2" />
+          <test-case id="1015" name="SolveCommonCases_2x2(2,-1,-2,-42,2,4,84)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_2x2(2,-1,-2,-42,2,4,84)" methodname="SolveCommonCases_2x2" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="1787815146" result="Failed" label="Error" start-time="2023-03-30T14:23:38.7247626Z" end-time="2023-03-30T14:23:38.7249264Z" duration="0.000164" asserts="0">
+            <failure>
+              <message><![CDATA[GaussAlgorithm.NoSolutionException : null matrix]]></message>
+              <stack-trace><![CDATA[   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 27
+   at GaussAlgorithm.Solver_Should.AssertIsSolvable(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 130
+   at GaussAlgorithm.Solver_Should.SolveCommonCases_2x2(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 54]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1016" name="SolveCommonCases_2x2(2,1,2,42,-2,-4,-84)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_2x2(2,1,2,42,-2,-4,-84)" methodname="SolveCommonCases_2x2" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="1714342872" result="Failed" label="Error" start-time="2023-03-30T14:23:38.7249328Z" end-time="2023-03-30T14:23:38.7250757Z" duration="0.000143" asserts="0">
+            <failure>
+              <message><![CDATA[GaussAlgorithm.NoSolutionException : null matrix]]></message>
+              <stack-trace><![CDATA[   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 27
+   at GaussAlgorithm.Solver_Should.AssertIsSolvable(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 130
+   at GaussAlgorithm.Solver_Should.SolveCommonCases_2x2(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 54]]></stack-trace>
+            </failure>
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1021" name="SolveCommonCases_3x3" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_3x3" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2023-03-30T14:23:38.7250903Z" end-time="2023-03-30T14:23:38.7256537Z" duration="0.000564" total="3" passed="0" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1018" name="SolveCommonCases_3x3(3,2,4,6,12,1,2,3,6,1,1,3,5)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_3x3(3,2,4,6,12,1,2,3,6,1,1,3,5)" methodname="SolveCommonCases_3x3" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="1425133137" result="Failed" label="Error" start-time="2023-03-30T14:23:38.7250992Z" end-time="2023-03-30T14:23:38.7253307Z" duration="0.000232" asserts="0">
+            <failure>
+              <message><![CDATA[GaussAlgorithm.NoSolutionException : null matrix]]></message>
+              <stack-trace><![CDATA[   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 27
+   at GaussAlgorithm.Solver_Should.AssertIsSolvable(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 130
+   at GaussAlgorithm.Solver_Should.SolveCommonCases_3x3(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 70]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1019" name="SolveCommonCases_3x3(3,2,4,6,12,1,2,4,7,1,2,6,9)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_3x3(3,2,4,6,12,1,2,4,7,1,2,6,9)" methodname="SolveCommonCases_3x3" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="833687542" result="Failed" label="Error" start-time="2023-03-30T14:23:38.7253393Z" end-time="2023-03-30T14:23:38.7254819Z" duration="0.000143" asserts="0">
+            <failure>
+              <message><![CDATA[GaussAlgorithm.NoSolutionException : null matrix]]></message>
+              <stack-trace><![CDATA[   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 27
+   at GaussAlgorithm.Solver_Should.AssertIsSolvable(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 130
+   at GaussAlgorithm.Solver_Should.SolveCommonCases_3x3(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 70]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1020" name="SolveCommonCases_3x3(3,1.0d,1.0d,3.0d,5,1.0d,3.0d,1.0d,5,1.0d,2.0d,6.0d,9,2.0d,4.0d,12.0d,18)" fullname="GaussAlgorithm.Solver_Should.SolveCommonCases_3x3(3,1.0d,1.0d,3.0d,5,1.0d,3.0d,1.0d,5,1.0d,2.0d,6.0d,9,2.0d,4.0d,12.0d,18)" methodname="SolveCommonCases_3x3" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="343973860" result="Failed" label="Error" start-time="2023-03-30T14:23:38.7254878Z" end-time="2023-03-30T14:23:38.7256468Z" duration="0.000159" asserts="0">
+            <failure>
+              <message><![CDATA[System.ArgumentOutOfRangeException : Specified argument was out of the range of valid values. (Parameter 'column')]]></message>
+              <stack-trace><![CDATA[   at MathNet.Numerics.LinearAlgebra.Storage.MatrixStorage`1.ValidateRange(Int32 row, Int32 column)
+   at MathNet.Numerics.LinearAlgebra.Storage.MatrixStorage`1.get_Item(Int32 row, Int32 column)
+   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 16
+   at GaussAlgorithm.Solver_Should.AssertIsSolvable(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 130
+   at GaussAlgorithm.Solver_Should.SolveCommonCases_3x3(Int32 columnCount, Double[] values) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 70]]></stack-trace>
+            </failure>
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1028" name="SolveRandomMatrix" fullname="GaussAlgorithm.Solver_Should.SolveRandomMatrix" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" testcasecount="6" result="Failed" site="Child" start-time="2023-03-30T14:23:38.7256597Z" end-time="2023-03-30T14:23:38.8757531Z" duration="0.150094" total="6" passed="5" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="12000">
+          <properties>
+            <property name="Repeat" value="500" />
+          </properties>
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1022" name="SolveRandomMatrix(2,2)" fullname="GaussAlgorithm.Solver_Should.SolveRandomMatrix(2,2)" methodname="SolveRandomMatrix" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="604522870" result="Passed" start-time="2023-03-30T14:23:38.7256668Z" end-time="2023-03-30T14:23:38.7326052Z" duration="0.006939" asserts="1000" />
+          <test-case id="1023" name="SolveRandomMatrix(3,3)" fullname="GaussAlgorithm.Solver_Should.SolveRandomMatrix(3,3)" methodname="SolveRandomMatrix" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="358132491" result="Passed" start-time="2023-03-30T14:23:38.7326176Z" end-time="2023-03-30T14:23:38.7454536Z" duration="0.012836" asserts="1500" />
+          <test-case id="1024" name="SolveRandomMatrix(4,4)" fullname="GaussAlgorithm.Solver_Should.SolveRandomMatrix(4,4)" methodname="SolveRandomMatrix" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="960771199" result="Passed" start-time="2023-03-30T14:23:38.7454673Z" end-time="2023-03-30T14:23:38.7592936Z" duration="0.013827" asserts="2000" />
+          <test-case id="1025" name="SolveRandomMatrix(5,5)" fullname="GaussAlgorithm.Solver_Should.SolveRandomMatrix(5,5)" methodname="SolveRandomMatrix" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="2026519565" result="Passed" start-time="2023-03-30T14:23:38.7593060Z" end-time="2023-03-30T14:23:38.7792740Z" duration="0.019968" asserts="2500" />
+          <test-case id="1026" name="SolveRandomMatrix(10,10)" fullname="GaussAlgorithm.Solver_Should.SolveRandomMatrix(10,10)" methodname="SolveRandomMatrix" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="1366112111" result="Passed" start-time="2023-03-30T14:23:38.7792934Z" end-time="2023-03-30T14:23:38.8752979Z" duration="0.096005" asserts="5000" />
+          <test-case id="1027" name="SolveRandomMatrix(3,5)" fullname="GaussAlgorithm.Solver_Should.SolveRandomMatrix(3,5)" methodname="SolveRandomMatrix" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="316674377" result="Failed" label="Error" start-time="2023-03-30T14:23:38.8753220Z" end-time="2023-03-30T14:23:38.8757381Z" duration="0.000416" asserts="0">
+            <failure>
+              <message><![CDATA[System.ArgumentOutOfRangeException : Specified argument was out of the range of valid values. (Parameter 'index')]]></message>
+              <stack-trace><![CDATA[   at MathNet.Numerics.LinearAlgebra.Storage.VectorStorage`1.ValidateRange(Int32 index)
+   at MathNet.Numerics.LinearAlgebra.Storage.VectorStorage`1.get_Item(Int32 index)
+   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 58
+   at GaussAlgorithm.Solver_Should.SolveRandomMatrix(Int32 rows, Int32 columns) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 83]]></stack-trace>
+            </failure>
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1032" name="ThrowsException_WhenNoSolution" fullname="GaussAlgorithm.Solver_Should.ThrowsException_WhenNoSolution" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2023-03-30T14:23:38.8757634Z" end-time="2023-03-30T14:23:38.8933872Z" duration="0.017624" total="3" passed="2" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="3">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1029" name="ThrowsException_WhenNoSolution(1,1,1,1,-1)" fullname="GaussAlgorithm.Solver_Should.ThrowsException_WhenNoSolution(1,1,1,1,-1)" methodname="ThrowsException_WhenNoSolution" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="245055277" result="Failed" start-time="2023-03-30T14:23:38.8757759Z" end-time="2023-03-30T14:23:38.8932547Z" duration="0.017479" asserts="1">
+            <failure>
+              <message><![CDATA[  Expected: <GaussAlgorithm.NoSolutionException>
+  But was:  <System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'column')
+   at MathNet.Numerics.LinearAlgebra.Storage.MatrixStorage`1.ValidateRange(Int32 row, Int32 column)
+   at MathNet.Numerics.LinearAlgebra.Storage.MatrixStorage`1.get_Item(Int32 row, Int32 column)
+   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 16
+   at GaussAlgorithm.Solver_Should.<>c__DisplayClass7_0.<ThrowsException_WhenNoSolution>b__0() in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 101
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, TestDelegate code, String message, Object[] args)>
+]]></message>
+              <stack-trace><![CDATA[   at GaussAlgorithm.Solver_Should.ThrowsException_WhenNoSolution(Int32 columnCount, Double[] args) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 101
+]]></stack-trace>
+            </failure>
+            <assertions>
+              <assertion result="Failed">
+                <message><![CDATA[  Expected: <GaussAlgorithm.NoSolutionException>
+  But was:  <System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'column')
+   at MathNet.Numerics.LinearAlgebra.Storage.MatrixStorage`1.ValidateRange(Int32 row, Int32 column)
+   at MathNet.Numerics.LinearAlgebra.Storage.MatrixStorage`1.get_Item(Int32 row, Int32 column)
+   at GaussAlgorithm.Solver.Solve(Double[][] matrix, Double[] freeMembers) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver.cs:line 16
+   at GaussAlgorithm.Solver_Should.<>c__DisplayClass7_0.<ThrowsException_WhenNoSolution>b__0() in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 101
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, TestDelegate code, String message, Object[] args)>
+]]></message>
+                <stack-trace><![CDATA[   at GaussAlgorithm.Solver_Should.ThrowsException_WhenNoSolution(Int32 columnCount, Double[] args) in C:\Users\Владислав\Desktop\C# 2 sem\gauss\Solver_Should.cs:line 101
+]]></stack-trace>
+              </assertion>
+            </assertions>
+          </test-case>
+          <test-case id="1030" name="ThrowsException_WhenNoSolution(2,1,2,42,2,4,42)" fullname="GaussAlgorithm.Solver_Should.ThrowsException_WhenNoSolution(2,1,2,42,2,4,42)" methodname="ThrowsException_WhenNoSolution" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="864797740" result="Passed" start-time="2023-03-30T14:23:38.8932806Z" end-time="2023-03-30T14:23:38.8933543Z" duration="0.000074" asserts="1" />
+          <test-case id="1031" name="ThrowsException_WhenNoSolution(3,2,4,6,12,1,2,3,6,1,2,3,7,1,1,3,5)" fullname="GaussAlgorithm.Solver_Should.ThrowsException_WhenNoSolution(3,2,4,6,12,1,2,3,6,1,2,3,7,1,1,3,5)" methodname="ThrowsException_WhenNoSolution" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="1518966908" result="Passed" start-time="2023-03-30T14:23:38.8933586Z" end-time="2023-03-30T14:23:38.8933805Z" duration="0.000022" asserts="1" />
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1038" name="ThrowsException_WhenNoSolutionOnRandomMatrix" fullname="GaussAlgorithm.Solver_Should.ThrowsException_WhenNoSolutionOnRandomMatrix" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" testcasecount="5" result="Passed" start-time="2023-03-30T14:23:38.8933969Z" end-time="2023-03-30T14:23:38.8937668Z" duration="0.000370" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+          <test-case id="1033" name="ThrowsException_WhenNoSolutionOnRandomMatrix(10)" fullname="GaussAlgorithm.Solver_Should.ThrowsException_WhenNoSolutionOnRandomMatrix(10)" methodname="ThrowsException_WhenNoSolutionOnRandomMatrix" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="1871123569" result="Passed" start-time="2023-03-30T14:23:38.8934038Z" end-time="2023-03-30T14:23:38.8936532Z" duration="0.000250" asserts="1" />
+          <test-case id="1034" name="ThrowsException_WhenNoSolutionOnRandomMatrix(5)" fullname="GaussAlgorithm.Solver_Should.ThrowsException_WhenNoSolutionOnRandomMatrix(5)" methodname="ThrowsException_WhenNoSolutionOnRandomMatrix" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="359485819" result="Passed" start-time="2023-03-30T14:23:38.8936620Z" end-time="2023-03-30T14:23:38.8936959Z" duration="0.000034" asserts="1" />
+          <test-case id="1035" name="ThrowsException_WhenNoSolutionOnRandomMatrix(4)" fullname="GaussAlgorithm.Solver_Should.ThrowsException_WhenNoSolutionOnRandomMatrix(4)" methodname="ThrowsException_WhenNoSolutionOnRandomMatrix" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="1610850627" result="Passed" start-time="2023-03-30T14:23:38.8936992Z" end-time="2023-03-30T14:23:38.8937186Z" duration="0.000019" asserts="1" />
+          <test-case id="1036" name="ThrowsException_WhenNoSolutionOnRandomMatrix(3)" fullname="GaussAlgorithm.Solver_Should.ThrowsException_WhenNoSolutionOnRandomMatrix(3)" methodname="ThrowsException_WhenNoSolutionOnRandomMatrix" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="975593145" result="Passed" start-time="2023-03-30T14:23:38.8937230Z" end-time="2023-03-30T14:23:38.8937391Z" duration="0.000016" asserts="1" />
+          <test-case id="1037" name="ThrowsException_WhenNoSolutionOnRandomMatrix(2)" fullname="GaussAlgorithm.Solver_Should.ThrowsException_WhenNoSolutionOnRandomMatrix(2)" methodname="ThrowsException_WhenNoSolutionOnRandomMatrix" classname="GaussAlgorithm.Solver_Should" runstate="Runnable" seed="585025653" result="Passed" start-time="2023-03-30T14:23:38.8937432Z" end-time="2023-03-30T14:23:38.8937580Z" duration="0.000015" asserts="1" />
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

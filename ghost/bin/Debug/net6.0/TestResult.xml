@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" name="ghost.dll" fullname="C:/Users/Владислав/Desktop/C# 2 sem/ghost/bin/Debug/net6.0/ghost.dll" testcasecount="5" result="Failed" start-time="2023-03-05T18:17:13.5889739Z" end-time="2023-03-05T18:17:22.2922488Z" duration="8.703243" total="5" passed="4" failed="1" inconclusive="0" skipped="0" warnings="0" asserts="24" random-seed="1739769831">
+  <command-line><![CDATA["C:\Users\Владислав\Desktop\C# 2 sem\ghost\bin\Debug\net6.0\ghost.dll"]]></command-line>
+  <filter />
+  <test-suite type="Assembly" id="1006" name="ghost.dll" fullname="C:/Users/Владислав/Desktop/C# 2 sem/ghost/bin/Debug/net6.0/ghost.dll" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2023-03-05T18:17:13.5889739Z" end-time="2023-03-05T18:17:22.2922488Z" duration="8.703243" total="5" passed="4" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="24">
+    <environment framework-version="3.13.3.0" clr-version="6.0.8" os-version="Microsoft Windows 10.0.22000" platform="Win32NT" cwd="C:\Users\Владислав\Desktop\C# 2 sem\ghost\bin\Debug\net6.0" machine-name="WALTANS" user="Владислав" user-domain="WALTANS" culture="ru-RU" uiculture="ru-RU" os-architecture="x64" />
+    <settings>
+      <setting name="WorkDirectory" value="C:\Users\Владислав\Desktop\C# 2 sem\ghost\bin\Debug\net6.0" />
+      <setting name="NumberOfTestWorkers" value="16" />
+    </settings>
+    <properties>
+      <property name="_PID" value="10140" />
+      <property name="_APPDOMAIN" value="ghost" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1007" name="hashes" fullname="hashes" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2023-03-05T18:17:13.5918610Z" end-time="2023-03-05T18:17:22.2922431Z" duration="8.700382" total="5" passed="4" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="24">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1000" name="GhostsTest" fullname="hashes.GhostsTest" classname="hashes.GhostsTest" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2023-03-05T18:17:13.5926733Z" end-time="2023-03-05T18:17:22.2920823Z" duration="8.699409" total="5" passed="4" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="24">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1003" name="GhostCatBreaksHashSet" fullname="hashes.GhostsTest.GhostCatBreaksHashSet" methodname="GhostCatBreaksHashSet" classname="hashes.GhostsTest" runstate="Runnable" seed="881303521" result="Passed" start-time="2023-03-05T18:17:13.5938053Z" end-time="2023-03-05T18:17:13.6050408Z" duration="0.011295" asserts="5" />
+        <test-case id="1004" name="GhostDocumentBreaksHashSet" fullname="hashes.GhostsTest.GhostDocumentBreaksHashSet" methodname="GhostDocumentBreaksHashSet" classname="hashes.GhostsTest" runstate="Runnable" seed="1160814166" result="Failed" start-time="2023-03-05T18:17:13.6064336Z" end-time="2023-03-05T18:17:22.2906776Z" duration="8.684244" asserts="4">
+          <failure>
+            <message><![CDATA[  ghostItem should disappear from HashSet after DoMagic()
+  Expected: False
+  But was:  True
+]]></message>
+            <stack-trace><![CDATA[   at hashes.GhostsTest.AssertThatDoMagicBreaksHashSet[TItem,TGhostsTask]() in C:\Users\Владислав\Desktop\C# 2 sem\ghost\GhostsTest.cs:line 51
+   at hashes.GhostsTest.GhostDocumentBreaksHashSet() in C:\Users\Владислав\Desktop\C# 2 sem\ghost\GhostsTest.cs:line 31
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  ghostItem should disappear from HashSet after DoMagic()
+  Expected: False
+  But was:  True
+]]></message>
+              <stack-trace><![CDATA[   at hashes.GhostsTest.AssertThatDoMagicBreaksHashSet[TItem,TGhostsTask]() in C:\Users\Владислав\Desktop\C# 2 sem\ghost\GhostsTest.cs:line 51
+   at hashes.GhostsTest.GhostDocumentBreaksHashSet() in C:\Users\Владислав\Desktop\C# 2 sem\ghost\GhostsTest.cs:line 31
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="1005" name="GhostRobotBreaksHashSet" fullname="hashes.GhostsTest.GhostRobotBreaksHashSet" methodname="GhostRobotBreaksHashSet" classname="hashes.GhostsTest" runstate="Runnable" seed="1198402098" result="Passed" start-time="2023-03-05T18:17:22.2907633Z" end-time="2023-03-05T18:17:22.2910761Z" duration="0.000313" asserts="5" />
+        <test-case id="1002" name="GhostSegmentBreaksHashSet" fullname="hashes.GhostsTest.GhostSegmentBreaksHashSet" methodname="GhostSegmentBreaksHashSet" classname="hashes.GhostsTest" runstate="Runnable" seed="1955502549" result="Passed" start-time="2023-03-05T18:17:22.2910861Z" end-time="2023-03-05T18:17:22.2913579Z" duration="0.000272" asserts="5" />
+        <test-case id="1001" name="GhostVectorBreaksHashSet" fullname="hashes.GhostsTest.GhostVectorBreaksHashSet" methodname="GhostVectorBreaksHashSet" classname="hashes.GhostsTest" runstate="Runnable" seed="1266816384" result="Passed" start-time="2023-03-05T18:17:22.2913659Z" end-time="2023-03-05T18:17:22.2915221Z" duration="0.000156" asserts="5" />
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

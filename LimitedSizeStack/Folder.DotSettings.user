@@ -1,0 +1,15 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5e39bd31_002Dd2c0_002D4a70_002D91fe_002D63116ec76d58/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="LimitedSizeStack_PerformanceTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7734FEB5-7FB7-8FC8-AFAA-6B780F3F38F0::net6.0::LimitedSizeStack.LimitedSizeStack_PerformanceTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7734FEB5-7FB7-8FC8-AFAA-6B780F3F38F0::net6.0::LimitedSizeStack.LimitedSizeStack_should&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7734FEB5-7FB7-8FC8-AFAA-6B780F3F38F0::net6.0::LimitedSizeStack.ListModel_PerformanceTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7734FEB5-7FB7-8FC8-AFAA-6B780F3F38F0::net6.0::LimitedSizeStack.ListModel_Should&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b6d983a3_002Df758_002D4057_002Dbc5c_002D8f0f46ab51cd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ListModel_Should" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7734FEB5-7FB7-8FC8-AFAA-6B780F3F38F0::net6.0::LimitedSizeStack.ListModel_Should&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7734FEB5-7FB7-8FC8-AFAA-6B780F3F38F0::net6.0::LimitedSizeStack.ListModel_PerformanceTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

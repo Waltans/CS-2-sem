@@ -1,0 +1,14 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8aea79d0_002D1dde_002D451e_002Dbc37_002D8dd6d5cba39a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from MovingMaxTests.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;2C764927-E1AC-D0EA-AEF9-94DB78902EF7/f:MovingMaxTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;2C764927-E1AC-D0EA-AEF9-94DB78902EF7/f:MovingAverageTests.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c35d21ab_002D9ad2_002D429f_002D861f_002Ded2e308560cc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from MovingAverageTests.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;2C764927-E1AC-D0EA-AEF9-94DB78902EF7/f:MovingAverageTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;2C764927-E1AC-D0EA-AEF9-94DB78902EF7/f:ExpSmoothingTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;2C764927-E1AC-D0EA-AEF9-94DB78902EF7/f:MovingMaxTests.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
