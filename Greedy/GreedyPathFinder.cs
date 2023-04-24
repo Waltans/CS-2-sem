@@ -8,29 +8,33 @@ public class GreedyPathFinder : IPathFinder
 {
     public List<Point> FindPathToCompleteGoal(State state)
     {
-        var result = new List<Point>();
+        var dijkstra = new DijkstraPathFinder();
+        var unvisitedChests = new HashSet<Point>(state.Chests);
+        var pathToGoal = new List<Point>();
+        var currentCell = state.Position;
+        var currentEnergy = 0;
+        var visitedChestsCount = 0;
 
-        if (state.Goal == 0 || state.Chests.Count == 0) return result;
-
-        var chests = new HashSet<Point>(state.Chests);
-        var finder = new DijkstraPathFinder();
-        var position = state.Position;
-        var energyLeft = state.Energy;
-
-        while (chests.Any())
+        while (visitedChestsCount < state.Goal && currentEnergy < state.Energy)
         {
-            var pathToClosestChest = finder.GetPathsByDijkstra(state, position, chests)
-                .OrderBy(path => path.Cost)
+            var nextChestPath = dijkstra.GetPathsByDijkstra(state, currentCell, unvisitedChests)
+                .Where(p => p != null && unvisitedChests.Contains(p.End))
+                .OrderBy(p => p.Cost)
                 .FirstOrDefault();
 
-            if (pathToClosestChest == null || energyLeft < pathToClosestChest.Cost) return new List<Point>();
+            if (nextChestPath == null)
+                return new List<Point>();
 
-            result.AddRange(pathToClosestChest.Path.Skip(1));
-            position = pathToClosestChest.End;
-            energyLeft -= pathToClosestChest.Cost;
-            chests.Remove(pathToClosestChest.End);
+            unvisitedChests.Remove(nextChestPath.End);
+            visitedChestsCount += 1;
+            currentEnergy += nextChestPath.Cost;
+            currentCell = nextChestPath.End;
+            pathToGoal.AddRange(nextChestPath.Path.Skip(1));
         }
 
-        return result;
+        if (visitedChestsCount == state.Goal && currentEnergy <= state.Energy)
+            return pathToGoal;
+
+        return new List<Point>();
     }
 }
