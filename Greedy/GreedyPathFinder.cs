@@ -8,60 +8,47 @@ public class GreedyPathFinder : IPathFinder
 {
     public List<Point> FindPathToCompleteGoal(State state)
     {
-<<<<<<< HEAD
-        var dijkstra = new DijkstraPathFinder();
-        var unvisitedChests = new HashSet<Point>(state.Chests);
         var pathToGoal = new List<Point>();
-        var currentCell = state.Position;
-        var currentEnergy = 0;
-        var visitedChestsCount = 0;
+        var chestsToCollect = state.Chests.ToHashSet();
+        var currentPosition = state.Position;
 
-        while (visitedChestsCount < state.Goal && currentEnergy < state.Energy)
+        if (GetPoints(state, currentPosition, chestsToCollect, ref pathToGoal, out var points)) return points;
+
+        return pathToGoal;
+    }
+
+    private static bool GetPoints(State initialState, Point currentPosition, HashSet<Point> chestsToCollect,
+        ref List<Point> pathToGoal,
+        out List<Point> points)
+    {
+        for (var i = 0; i < initialState.Goal; i++)
         {
-            var nextChestPath = dijkstra.GetPathsByDijkstra(state, currentCell, unvisitedChests)
-                .Where(p => p != null && unvisitedChests.Contains(p.End))
-                .OrderBy(p => p.Cost)
-                .FirstOrDefault();
+            var pathToChest = new DijkstraPathFinder()
+                .GetPathsByDijkstra(initialState, currentPosition, chestsToCollect).FirstOrDefault();
 
-            if (nextChestPath == null)
-                return new List<Point>();
+            if (pathToChest == null)
+            {
+                points = Enumerable.Empty<Point>().ToList();
+                return true;
+            }
 
-            unvisitedChests.Remove(nextChestPath.End);
-            visitedChestsCount += 1;
-            currentEnergy += nextChestPath.Cost;
-            currentCell = nextChestPath.End;
-            pathToGoal.AddRange(nextChestPath.Path.Skip(1));
+            currentPosition = pathToChest.End;
+
+            if (initialState.Energy < pathToChest.Cost)
+            {
+                points = Enumerable.Empty<Point>()
+                    .ToList();
+                return true;
+            }
+
+            chestsToCollect.Remove(pathToChest.End);
+            pathToGoal =
+                pathToGoal.Concat(pathToChest.Path.Skip(1))
+                    .ToList();
+            initialState.Scores++;
         }
 
-        if (visitedChestsCount == state.Goal && currentEnergy <= state.Energy)
-            return pathToGoal;
-
-        return new List<Point>();
-=======
-        var result = new List<Point>();
-
-        if (state.Goal == 0 || state.Chests.Count == 0) return result;
-
-        var chests = new HashSet<Point>(state.Chests);
-        var finder = new DijkstraPathFinder();
-        var position = state.Position;
-        var energyLeft = state.Energy;
-
-        while (chests.Any())
-        {
-            var pathToClosestChest = finder.GetPathsByDijkstra(state, position, chests)
-                .OrderBy(path => path.Cost)
-                .FirstOrDefault();
-
-            if (pathToClosestChest == null || energyLeft < pathToClosestChest.Cost) return new List<Point>();
-
-            result.AddRange(pathToClosestChest.Path.Skip(1));
-            position = pathToClosestChest.End;
-            energyLeft -= pathToClosestChest.Cost;
-            chests.Remove(pathToClosestChest.End);
-        }
-
-        return result;
->>>>>>> 3e3b700 (Commit)
+        points = null;
+        return false;
     }
 }
