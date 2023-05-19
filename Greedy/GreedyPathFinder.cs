@@ -8,47 +8,36 @@ public class GreedyPathFinder : IPathFinder
 {
     public List<Point> FindPathToCompleteGoal(State state)
     {
+        var remainingChests = new HashSet<Point>(state.Chests);
+        var pathFinder = new DijkstraPathFinder();
         var pathToGoal = new List<Point>();
-        var chestsToCollect = state.Chests.ToHashSet();
+
+        double totalCost = 0;
         var currentPosition = state.Position;
 
-        if (GetPoints(state, currentPosition, chestsToCollect, ref pathToGoal, out var points)) return points;
+        for (var i = 0; i < state.Goal; i++)
+        {
+            var shortestPath = pathFinder.GetPathsByDijkstra(state, currentPosition, remainingChests).FirstOrDefault();
+            if (shortestPath == null)
+                return new List<Point>();
+
+            totalCost += shortestPath.Cost;
+            currentPosition = shortestPath.End;
+
+            if (state.Energy < totalCost)
+                return new List<Point>();
+
+            AddPathToGoal(state, remainingChests, shortestPath, pathToGoal);
+        }
 
         return pathToGoal;
     }
 
-    private static bool GetPoints(State initialState, Point currentPosition, HashSet<Point> chestsToCollect,
-        ref List<Point> pathToGoal,
-        out List<Point> points)
+    private static void AddPathToGoal(State state, HashSet<Point> remainingChests, PathWithCost shortestPath,
+        List<Point> pathToGoal)
     {
-        for (var i = 0; i < initialState.Goal; i++)
-        {
-            var pathToChest = new DijkstraPathFinder()
-                .GetPathsByDijkstra(initialState, currentPosition, chestsToCollect).FirstOrDefault();
-
-            if (pathToChest == null)
-            {
-                points = Enumerable.Empty<Point>().ToList();
-                return true;
-            }
-
-            currentPosition = pathToChest.End;
-
-            if (initialState.Energy < pathToChest.Cost)
-            {
-                points = Enumerable.Empty<Point>()
-                    .ToList();
-                return true;
-            }
-
-            chestsToCollect.Remove(pathToChest.End);
-            pathToGoal =
-                pathToGoal.Concat(pathToChest.Path.Skip(1))
-                    .ToList();
-            initialState.Scores++;
-        }
-
-        points = null;
-        return false;
+        remainingChests.Remove(shortestPath.End);
+        pathToGoal.AddRange(shortestPath.Path.Skip(1));
+        state.Scores++;
     }
 }
