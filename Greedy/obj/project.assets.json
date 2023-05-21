@@ -5418,11 +5418,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Владислав\\Desktop\\C# 2 sem\\Greedy\\Greedy.csproj",
+      "projectUniqueName": "C:\\Users\\Владислав\\OneDrive - УрФУ\\Рабочий стол\\C# 2 sem\\Greedy\\Greedy.csproj",
       "projectName": "Greedy",
-      "projectPath": "C:\\Users\\Владислав\\Desktop\\C# 2 sem\\Greedy\\Greedy.csproj",
+      "projectPath": "C:\\Users\\Владислав\\OneDrive - УрФУ\\Рабочий стол\\C# 2 sem\\Greedy\\Greedy.csproj",
       "packagesPath": "C:\\Users\\Владислав\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Владислав\\Desktop\\C# 2 sem\\Greedy\\obj\\",
+      "outputPath": "C:\\Users\\Владислав\\OneDrive - УрФУ\\Рабочий стол\\C# 2 sem\\Greedy\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Владислав\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5502,7 +5502,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Владислав\\.dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

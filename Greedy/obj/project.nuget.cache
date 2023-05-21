@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oeJYHg5mKHShty/G+00yft5XrlLr+DWFlPVvcUcVUl9oynsqYITHQXcuL3nWKq99dNpgqbj3PV0IfBEzKegpqA==",
+  "dgSpecHash": "ShS6D85pO6ZOkHq5IpLeyGPlS4N25i+dT/EVFK8FDqxfhZgkgA0deU/r30reDEgdpDJOGGVyQb33CmGWa53RcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Владислав\\Desktop\\C# 2 sem\\Greedy\\Greedy.csproj",
+  "projectFilePath": "C:\\Users\\Владислав\\OneDrive - УрФУ\\Рабочий стол\\C# 2 sem\\Greedy\\Greedy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Владислав\\.nuget\\packages\\avalonia\\0.10.13\\avalonia.0.10.13.nupkg.sha512",
     "C:\\Users\\Владислав\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.0.2020091801\\avalonia.angle.windows.natives.2.1.0.2020091801.nupkg.sha512",
